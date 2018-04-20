@@ -1,5 +1,5 @@
 .footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     /* height: 60px;
@@ -8,4 +8,11 @@
 }
 .footer .nav-link {
     padding: 0 1rem !important;
+}
+.footer li{
+    font-size: 0.8m;
+}
+.reset {
+    margin: 0 !important;
+    padding: 0 !important;
 }
