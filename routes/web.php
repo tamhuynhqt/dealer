@@ -12,9 +12,11 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/{slug}', 'PagesController@index');
+//Route::get('/{slug}', 'PagesController@index')->where('slug','about|contact');
 Route::post('/contact', 'PagesController@contact');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/car','CarCRUDController');
+Route::resource('/body','BodyCRUDController');

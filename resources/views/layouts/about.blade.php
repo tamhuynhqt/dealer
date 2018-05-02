@@ -1,6 +1,6 @@
 @extends('layouts.app') 
 @section('content')
-<div><img src={!! url( 'public/images/test.webp') !!} class="img-fluid" alt="About Us"></div>
+<div><img src={!! url( 'public/images/about.webp') !!} class="img-fluid" alt="About Us"></div>
 <h2> About us</h2>
 <div class="row container-fluid">
     <div class="col-lg-6 col-md-6 ml-auto">
