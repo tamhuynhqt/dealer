@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit a Body</h2>
+                <h2>Add New car</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('body.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('car.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -20,8 +20,7 @@
             </ul>
         </div>
     @endif
-    
-    {!! Form::model($body, array('route' =>[ 'body.update', $body->id],'method'=>'PATCH')) !!}
-    @include('car.body.form')
+    {!! Form::open(array('route' => 'car.store','method'=>'POST','files'=>true)) !!}
+    @include('car.form')
     {!! Form::close() !!}
 @endsection

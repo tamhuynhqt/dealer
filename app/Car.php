@@ -8,13 +8,13 @@ class Car extends Model
 {
     protected $guarded = [];
 
-    public function Body()
+    public function body()
     {
         return $this->belongsTo('App\Body');
     }
 
-    public function Image()
+    public function image()
     {
-        return $this->hasOne('App\Image');
+        return $this->belongsTo('App\Image');
     }
 }
