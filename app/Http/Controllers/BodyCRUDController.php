@@ -107,6 +107,7 @@ class BodyCRUDController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Body::find($id)->delete();
+        return redirect()->route('body.index') ->with('success','Body deleted successfully');
     }
 }

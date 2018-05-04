@@ -16,10 +16,10 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('featured');
-            $table->string('front');
-            $table->string('back');
-            $table->string('side');
-            $table->string('inside');
+            $table->string('front')->nullable();;
+            $table->string('back')->nullable();;
+            $table->string('side')->nullable();;
+            $table->string('inside')->nullable();;
             $table->timestamps();
         });
     }

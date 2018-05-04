@@ -8,8 +8,8 @@ class Image extends Model
 {
     protected $guarded = [];
 
-    public function Car()
+    public function car()
     {
-        return $this->belonsTo('App\Car');
+        return $this->hasOne('App\Car');
     }
 }
